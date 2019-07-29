@@ -1,0 +1,13 @@
+export SIGNER=B268D7C4DD25D552
+export VERSION=0.14.7
+sudo rm -R /home/debian/superdigitalcoin
+sudo rm -R /home/debian/gitian-builder/inputs/superdigitalcoin
+cd ..
+git clone https://github.com/superdigitalcoin-project/superdigitalcoin.git
+
+pushd ./superdigitalcoin
+git fetch
+git checkout v${VERSION}
+popd
+
+
